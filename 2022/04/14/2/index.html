@@ -193,19 +193,36 @@
 <p><em>例如我的github账号就叫Alanshen2333</em></p>
 <p>然后创建一个新的仓库，名字需叫<br><em>yourUserName.github.io</em></p>
 <p>这时候，当你上传一个html之后，你便可以从*<a target="_blank" rel="noopener" href="https://yourusername.github.io/*%E6%9D%A5%E8%AE%BF%E9%97%AE%E5%AE%83%E4%BA%86">https://yourUserName.github.io/*来访问它了</a></p>
-<p>##Hexo<br>显然，让我从头学js开始写站点是不现实的<del>其实就是我菜</del>。</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>显然，让我从头学js开始写站点是不现实的<del>其实就是我菜</del>。</p>
 <p>因此，我用到了Hexo来生成我的站点</p>
 <p>过程很简单，官方的文档也写得很全面<br><em><a target="_blank" rel="noopener" href="https://hexo.io/">https://hexo.io/</a></em></p>
 <p>在简单的用nodejs装完了Hexo后</p>
-<p>简单的<br><code>hexo s</code><br>你应该就能从*http:&#x2F;&#x2F;[::1]:4000&#x2F;*访问你的网站了<br>当然它此时就和本站此时一样什么都没有</p>
-<p>你可以用<br><code>hexo new &lt;name&gt;</code><br>来写一篇文章，需使用markdown语法</p>
+<p>简单的</p>
+<pre><code>hexo s
+</code></pre>
+<p>你应该就能从<br><em>http:&#x2F;&#x2F;[::1]:4000&#x2F;</em><br>访问你的网站了<br><del>当然它此时就和本站此时一样什么都没有</del></p>
+<p>你可以用<br>    hexo new <name><br>来写一篇文章，需使用markdown语法</p>
 <p>*（值得一提的是，网站渲染出的markdown与我vscode中markdown插件的预览并不完全一致。）</p>
 <p>扯远了</p>
 <p>我们回到*_config.yml*</p>
 <p>你需要更改文件的末尾</p>
-<p><code>deploy:   type: git   repository: https://github.com/Alanshen2333/alanshen2333.github.io.git   branch: main   </code></p>
-<p>像这样<br>接着使用<code>hexo g -d</code>便能将网站同步</p>
-<p><del>(作者写到这儿又开摆力</del></p>
+<p>像这样</p>
+<pre><code>deploy:
+ type: git
+ repository: https://github.com/Alanshen2333/alanshen2333.github.io.git
+ branch: main
+</code></pre>
+<p>接着使用</p>
+<pre><code>hexo g -d
+</code></pre>
+<p>便能将网站同步到GitHub Pages</p>
+<h2 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h2><p>在完成了基本的内容后，就到了美化的时候了，其实默认的模板挺好看的，但我不知道咋自定义-.-</p>
+<p>于是我就用到了Hexo的 <em>themes</em></p>
+<p>我用到的是</p>
+<pre><code>https://github.com/luswdev/hexo-theme-clean
+</code></pre>
+<p>按文档装完后替换一下resource里的资源文件就行了<br>记得注意文件拓展名</p>
+<p>好，差不多就写这些罢。</p>
 
 
                 
